@@ -15,7 +15,7 @@ class PageController extends React.Component{
 		}else if(this.props.selected === "Projects"){
 			pageRendered =( <Projects />);
 		}else {
-			pageRendered =( <img src={resume} className="row justify-center resume"  alt="resume" />);
+			pageRendered =( <div className='col-md-7'> <img src={resume} className="row justify-center resume"  alt="resume" /> </div>);
 			
 		}
 

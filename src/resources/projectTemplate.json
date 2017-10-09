@@ -1,0 +1,11 @@
+{
+	"Name": "Name of Project",
+			"Role": "My role in the project",
+			"Images": ["array of image file names, images are saved in resources/projectImages"],
+			"ImageCaptions" : ["Array of image captions, each caption alligns with the image"],
+			"Technologies": ["list of Technologies used to develop website"],
+			"BriefDescription": "Description featured on Modal",
+			"LongerDescription":["Array of descriptions of the project listed in the modal"],
+			"WebsiteLink": "link to website",
+			"github": "repository name of project"
+}

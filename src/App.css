@@ -14,6 +14,7 @@
 	height: 50px;
 	font-family: 'Comfortaa', cursive;
 
+
 }
 
 .resume {
@@ -82,7 +83,7 @@ body{
 }
 
 .my-modal{
-  background-color: #81aff9;
+  background-color: #EAE29F;
   position: absolute;
   z-index: 9999;
 
@@ -93,6 +94,56 @@ body{
   left: 5%; 
   }
 
+.modalInfo{
+  background-color: #BE8743;
+  border-radius: 5px;
+}
+
 i{
   font-size: 20px;
 }
+
+ul.left{
+  margin-left: -20%;
+}
+
+div.aboutMe p{
+  font-size:20px;
+
+}
+
+span.c1{
+  color: #0275D8;
+}
+
+span.c2{
+  color: #8D7745;
+}
+
+span.c3{
+  color: #A9594E;
+}
+
+a{color: #A9594E;}
+
+div.card-header{
+  background-color: #BE8743;
+}
+
+div.card{
+  background-color:#EAE29F;
+}
+
+btn-secondary-custom{
+  background-color: #EAE29F;
+
+}
+
+btn-secondary-custom:hover{
+  background-color: #FCE29F;
+}
+
+img.height{
+  height:100%;
+}
+

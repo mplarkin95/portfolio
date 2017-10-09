@@ -1,0 +1,8 @@
+body{
+	background-image: url(./resources/backgrounder.jpg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	background-size: 100% auto;
+
+}

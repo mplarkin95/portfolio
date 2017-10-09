@@ -2,13 +2,32 @@
 	"Projects":[
 			{"Name": "This Portfolio",
 			"Role": "Developer",
-			"Images": ["templateimg1.jpg", "templateimg1.jpg"],
-			"ImageCaptions" : ["template1 pic", "template 2 pic"],
-			"Technologies": ["React","Bootstrap", "Github"],
+			"Images": ["portfolio_home.png", "jsonTemplate.png"],
+			"ImageCaptions" : ["Home screen of this app", "template json for projects list"],
+			"Technologies": ["React","Bootstrap", "Github Pages"],
 			"BriefDescription": "Created this portfolio site using React.",
-			"LongerDescription":["I created the static sidebar","Implemented the use of copying email to clipboard", "Styled with custom CSS used bootstrap only for columns and rows templating as well as some bootstrap CSS classes (card, responsive images)"],
-			"WebsiteLink": "https://blahblahblah.com",
+			"LongerDescription":["Created dynamic page displays through React","Added functionality such as copying e-mail to clipboard and multiple images on modal display","Developed projects component to read  from list of objects in a projects JSON file.", "Styled with custom CSS and used bootstrap for layout (columns and rows) as well as some bootstrap CSS classes (card, responsive images)"],
+			"WebsiteLink": "https://mplarkin95.github.io/portfolio",
 			"github": "portfolio"
+			},
+			{"Name": "Global Brain Exchange",
+			"Role": "Co-Founder / Web Developer",
+			"Images": ["GBX_Splash.png", "gbx_profile.png","gbx_search.png"],
+			"ImageCaptions" : ["Home screen of the web application", "example profile of a student", "Example of search functionality"],
+			"Technologies": ["Ruby on Rails","Bootstrap", "JQuery"],
+			"BriefDescription": "Co-Founded this startup and created an alpha build of the web application as a proof of concept",
+			"LongerDescription":["Built and designed the web-application to show the proposed functionality of our product.","Created static pages as well as profile pages, where users could create/edit profiles and friend other users", "Implemented a search function to specifically query users based on their role and attributes about them "],
+			"WebsiteLink": "https://www.globalbrainexchange.org/",
+			"github": "global_brain_exchange_prototype"},
+
+			{"Name": "Worcester Provider Alliance",
+			"Role": "Web Developer",
+			"Images": ["wpa_home.png", "wpa_search.png"],
+			"ImageCaptions" : ["Home Screen", "Demo search screen of organizations"],
+			"Technologies": ["Wordpress","HTML"],
+			"BriefDescription": "Developed the website for the Worcester Provider Alliance",
+			"LongerDescription":["Developed this site in Wordpress for the Worcester Provider Alliance an organization dedicated to providing resources to underrepresented communities in Worcester","Created ability to create profile for an organization and search for other organizations for refferalls "],
+			"WebsiteLink": "https://www.worcesterprovideralliance.org/"
 			}
 
 	]

@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectList from '../resources/ProjectList.json';
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 class Projects extends React.Component{
 	constructor(props) {
@@ -18,7 +19,7 @@ class Projects extends React.Component{
 	}
 
 	render(){
-		const projs = this.state.data.map((item,key)=> (<div className='col-md-5 mb-2'><Project key={key} handleExpand={this.expandModal.bind(this,key)} data={item} /></div>));
+		const projs = this.state.data.map((item,key)=> (<div className='col-md-5 mb-2 scrollable'><Project key={key} handleExpand={this.expandModal.bind(this,key)} data={item} /></div>));
 		const overlayClass = this.state.modalExpanded?'show':'';
 		const expanded = this.state.modalExpanded?(<ProjectModal handleClose={this.closeModal.bind(this)} data={this.state.data[this.state.modalKey]} />): ''
 		return(
@@ -48,11 +49,7 @@ class Project extends React.Component{
 				<div className='card-header'>
 					<h2 >{this.props.data.Name}</h2>
 				</div>
-				<div className='card-block'>
-					<div className="card-img" >
-						<img src={thumbnailSrc} className='img-fluid' />
-					</div>
-				</div>
+				
 				<div className='card-block'>
 					<h5>{this.props.data.Role}</h5>
 					<p className="card-text">{this.props.data.BriefDescription}</p>
@@ -90,6 +87,7 @@ class ProjectModal extends React.Component{
 		this.pictureNext= this.pictureNext.bind(this);
 	}
 
+
 	picturePrev(e){
 		const newIndex = this.state.imgIndex -1;
 		this.setState({imgIndex: newIndex});
@@ -101,8 +99,6 @@ class ProjectModal extends React.Component{
 		this.setState({imgIndex: newIndex});
 		e.preventDefault();
 	}
-
-
 
 
 
@@ -122,9 +118,9 @@ class ProjectModal extends React.Component{
 						    <span className="carousel-control-prev-icon"  aria-hidden="true"></span>
 						  </div>
 						  	<div className={"carousel-control-next "+ nextHidden}  onClick={this.pictureNext} >
-						    <span className="carousel-control-next-icon"  aria-hidden="true"></span>
+						    <span className="carousel-control-next-icon" style={{textColor: '#FFF'}}  aria-hidden="true"></span>
 						  </div>
-						<img className='img-fluid' src={imgSrc} />
+						<img className='img-fluid rounded height ' src={imgSrc} />
 						</div>
 
 						<div className='col-md-2 '>
@@ -132,10 +128,10 @@ class ProjectModal extends React.Component{
 							<h3>{this.props.data.Role}</h3>
 							<hr />
 							<h5>Technologies used: </h5>
-							<ul > 
+							<ul className='left' > 
 								{this.props.data.Technologies.map((item) => (<li> {item} </li>))}
 							</ul>
-							<hr className='mb-5' />
+							<hr className='mb-2' />
 
 							{imgCaption?(<i>{imgCaption}</i>):''}
 
@@ -143,7 +139,7 @@ class ProjectModal extends React.Component{
 
 					</div>
 
-					<div className='col-md-10'>
+					<div className='container-fluid modalInfo' >
 						<h2>About {this.props.data.Name}</h2>
 						<ul>
 							{this.props.data.LongerDescription.map((item) => (<li> {item} </li>))}
@@ -153,7 +149,7 @@ class ProjectModal extends React.Component{
 					</div>
 
 					
-					<button className='btn btn-block' onClick={this.props.handleClose}> Close </button>
+					<button className='btn btn-block btn-primary ' onClick={this.props.handleClose}> Close </button>
 				</div>
 			</div>
 		)
