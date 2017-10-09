@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  
+}
+
+.side{
+
+  border-right: .5px solid #333;
+
+
+}
+
+.btn{
+	height: 50px;
+	font-family: 'Comfortaa', cursive;
+
+}
+
+.resume {
+    max-width: 100vw;
+    height:auto;
+    width:auto;
+    max-height:90vh;
+    background-color: #fff;
+}
+
+.gutter-20.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.fa{
+	font-size: 40px;
+	text-align: center;
+}
+
+body{
+	font-family: 'Comfortaa', cursive;
+}
+
+.helper{
+  border-radius: 10px;
+  z-index: 1;
+  position: absolute;
+  left: 100px;
+  top: -40px;  
+  background-color: #000;
+  color: #fff;
+
+}
+
+.hidden{
+
+  display: none;
+}
+
+.notification{
+  color: #ff1a1a;
+  text-align: center;
+}
+
+.overlay{
+   position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden; 
+
+}
+
+.overlay.show{
+  visibility: visible;
+  opacity: 1;
+}
+
+.my-modal{
+  background-color: #81aff9;
+  position: absolute;
+  z-index: 9999;
+
+  width: 90%;
+
+
+  top: 5%;
+  left: 5%; 
+  }
+
+i{
+  font-size: 20px;
+}

@@ -1,0 +1,16 @@
+{
+	"Projects":[
+			{"Name": "This Portfolio",
+			"Role": "Developer",
+			"Images": ["templateimg1.jpg", "templateimg1.jpg"],
+			"ImageCaptions" : ["template1 pic", "template 2 pic"],
+			"Technologies": ["React","Bootstrap", "Github"],
+			"BriefDescription": "Created this portfolio site using React.",
+			"LongerDescription":["I created the static sidebar","Implemented the use of copying email to clipboard", "Styled with custom CSS used bootstrap only for columns and rows templating as well as some bootstrap CSS classes (card, responsive images)"],
+			"WebsiteLink": "https://blahblahblah.com",
+			"github": "portfolio"
+			}
+
+	]
+
+}
